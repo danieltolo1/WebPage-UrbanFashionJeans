@@ -43,12 +43,43 @@ html {
 .btn-wsp:hover{
     background: #20ba5a;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
+
+@media screen and (min-width:769px){
+
+.mapaResponsive{
+    display:none;
+}
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px){
     .btn-wsp{
         width:63px;
         height:63px;
         line-height: 66px;
 	}
+
+    .containerIframe{
+        display: none;
+    }
+
+    .mapaResponsive{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        height: 400px;
+        display: block;
+    }
+
+    .mapa1{
+    
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
